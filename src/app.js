@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const routesV1 = require('./routes/v1');
+const routes = require('./routes');
 const ApiError = require('./utils/ApiError');
 const httpStatus = require('./utils/httpStatus');
 const { errorConverter, errorHandler } = require('./middlewares/error');
@@ -17,7 +17,7 @@ if (config.env !== 'test') {
 app.use(express.json());
 app.use(cors());
 
-app.use('/v1', routesV1);
+app.use('/', routes);
 
 app.use((req, res, next) => {
   next(new ApiError(httpStatus.NOT_FOUND, 'Not found'));

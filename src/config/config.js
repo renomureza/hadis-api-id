@@ -8,7 +8,7 @@ const envVarsSchema = Yup.object({
   NODE_ENV: Yup.string()
     .oneOf(['production', 'development', 'test'])
     .required(),
-  PORT: Yup.number().default(4001).required(),
+  PORT: Yup.number().default(3000).required(),
 }).unknown();
 
 let envVars;

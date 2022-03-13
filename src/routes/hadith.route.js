@@ -1,5 +1,5 @@
 const express = require('express');
-const hadithController = require('../../controllers/hadiths.controller');
+const hadithController = require('../controllers/hadiths.controller');
 
 const router = express.Router({ mergeParams: true });
 
