@@ -14,7 +14,7 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
-    "prepare": "husky install"
+    "prepare": "npx husky install"
   },
   "dependencies": {
     "cors": "^2.8.5",
