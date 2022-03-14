@@ -6,9 +6,9 @@
       "use": "@vercel/node"
     },
     {
-      "src": ".dist/assets/swagger-ui-dist/**",
+      "src": ".dist/**",
       "use": "@vercel/node",
-      "config": { "includeFiles": "dist/assets/swagger-ui-dist/**" }
+      "config": { "includeFiles": "dist/**" }
     }
   ],
   "rewrites": [

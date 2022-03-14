@@ -5,7 +5,7 @@ const path = require('path');
 
 const main = async () => {
   const assetsDirPath = path.resolve('node_modules/swagger-ui-dist');
-  const destination = path.resolve('.dist/assets/swagger-ui-dist');
+  const destination = path.resolve('.dist');
   // eslint-disable-next-line security/detect-non-literal-fs-filename
   const assets = await fs.readdir(assetsDirPath);
   const globs = ['js', 'css', 'html', 'png'];
