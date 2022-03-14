@@ -14,7 +14,7 @@
   ],
   "functions": {
     "src/app.js": {
-      "includeFiles": "node_modules/swagger-ui-dist/**"
+      "includeFiles": "/node_modules/swagger-ui-dist/**"
     }
   },
   "headers": [
