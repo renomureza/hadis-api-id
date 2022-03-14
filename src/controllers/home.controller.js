@@ -8,7 +8,7 @@ const getEndpointsOverview = (req, res) => {
       `${config.baseUrl}/hadith/abu-dawud/1`,
     ],
     maintainer: 'R.M. Reza (renomureza@gmail.com)',
-    source: 'https://github.com/renomureza/hadits-api-id',
+    source: 'https://github.com/renomureza/hadith-api-id',
   });
 };
 
