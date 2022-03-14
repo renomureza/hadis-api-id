@@ -1,14 +1,14 @@
 {
-  "name": "hadits-api-id",
+  "name": "hadis-api-id",
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
   "author": "R.M. Reza (renomureza@gmail.com)",
-  "homepage": "https://github.com/renomureza/hadits-api-id#readme",
-  "url": "https://github.com/renomureza/hadits-api-id/issues",
+  "homepage": "https://github.com/renomureza/hadis-api-id#readme",
+  "url": "https://github.com/renomureza/hadis-api-id/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/renomureza/hadits-api-id.git"
+    "url": "https://github.com/renomureza/hadis-api-id.git"
   },
   "scripts": {
     "start": "node .",
