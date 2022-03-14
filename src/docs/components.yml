@@ -1,0 +1,75 @@
+components:
+  schemas:
+    Narrator:
+      type: object
+      properties:
+        number:
+          type: number
+        name:
+          type: string
+        slug:
+          type: string
+      example:
+        number: 1
+        name: Abu Dawud
+        slug: abu-dawud
+
+    Hadith:
+      type: object
+      properties:
+        name:
+          type: string
+        slug:
+          type: string
+        total:
+          type: number
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              number:
+                type: number
+              arab:
+                type: string
+              id:
+                type: string
+
+    Pagination:
+      type: object
+      properties:
+        totalItems:
+          type: number
+        currentPage:
+          type: number
+        pageSize:
+          type: number
+        totalPages:
+          type: number
+        startPage:
+          type: number
+        endPage:
+          type: number
+        startIndex:
+          type: number
+        endIndex:
+          type: number
+        pages:
+          type: array
+          items:
+            type: integer
+          minItems: 1
+          maxItems: 10
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: number
+        message:
+          type: string
+      example:
+        code: 404
+        message: not found

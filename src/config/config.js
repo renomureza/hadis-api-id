@@ -9,9 +9,11 @@ const envVarsSchema = Yup.object({
     .oneOf(['production', 'development', 'test'])
     .required(),
   PORT: Yup.number().default(3000).required(),
+  BASE_URL: Yup.string().default('http://localhost:3000'),
 }).unknown();
 
 let envVars;
+
 try {
   envVars = envVarsSchema.validateSync(process.env);
 } catch (error) {
@@ -21,4 +23,5 @@ try {
 module.exports = {
   env: envVars.NODE_ENV,
   port: envVars.PORT,
+  baseUrl: envVars.BASE_URL,
 };
