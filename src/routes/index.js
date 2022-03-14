@@ -2,7 +2,6 @@ const express = require('express');
 const hadithsRoutes = require('./hadith.route');
 const homeRoutes = require('./home.route');
 const docRoutes = require('./doc.route');
-const config = require('../config/config');
 
 const router = express.Router();
 
@@ -30,10 +29,10 @@ routers.forEach((route) => {
 });
 
 /* istanbul ignore next */
-if (config.env === 'development') {
-  devRoutes.forEach((route) => {
-    router.use(route.path, route.route);
-  });
-}
+// if (config.env === 'development') {
+devRoutes.forEach((route) => {
+  router.use(route.path, route.route);
+});
+// }
 
 module.exports = router;
