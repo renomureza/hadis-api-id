@@ -1,3 +1,4 @@
 {
-  "*.js": "eslint"
+  "*.js": ["eslint --cache --fix", "jest --findRelatedTests"],
+  "*.{js,md}": "prettier --write"
 }
