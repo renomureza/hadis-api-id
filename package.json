@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
+  "author": "R.M. Reza (renomureza@gmail.com)",
+  "homepage": "https://github.com/renomureza/hadits-api-id#readme",
+  "url": "https://github.com/renomureza/hadits-api-id/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renomureza/hadits-api-id.git"
+  },
   "scripts": {
     "start": "node .",
     "dev": "nodemon src/index.js",

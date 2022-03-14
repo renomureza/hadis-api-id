@@ -1,20 +1,11 @@
+const config = require('../config/config');
+
 const getEndpointsOverview = (req, res) => {
   return res.send({
     endpoints: [
-      {
-        path: '/v1/hadith',
-        description: 'get all imam: /hadith',
-      },
-      {
-        path: '/v1/hadith/abu-dawud',
-        description:
-          'get spesifict surah using number surah in quran (1 - 114): /surahs/{numberSurah}',
-      },
-      {
-        path: '/v1/hadith/abu-dawud/1',
-        description:
-          'get all ayah from spesifict surah: /surahs/{numberSurah}/ayahs',
-      },
+      `${config.baseUrl}/hadith`,
+      `${config.baseUrl}/hadith/abu-dawud?page=1&limit=20`,
+      `${config.baseUrl}/hadith/abu-dawud/1`,
     ],
     maintainer: 'R.M. Reza (renomureza@gmail.com)',
     source: 'https://github.com/renomureza/hadits-api-id',
