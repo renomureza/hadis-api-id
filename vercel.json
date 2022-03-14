@@ -12,6 +12,11 @@
       "destination": "/src/app.js"
     }
   ],
+  "functions": {
+    "/src/app.js": {
+      "includeFiles": "node_modules/swagger-ui-dist/**"
+    }
+  },
   "headers": [
     {
       "source": "/(.*)",
