@@ -4,6 +4,11 @@
     {
       "src": "./src/app.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": ".dist/assets/swagger-ui-dist/**",
+      "use": "@vercel/node",
+      "config": { "includeFiles": "dist/assets/swagger-ui-dist/**" }
     }
   ],
   "rewrites": [
@@ -12,11 +17,6 @@
       "destination": "/src/app.js"
     }
   ],
-  "functions": {
-    "src/app.js": {
-      "includeFiles": "/node_modules/swagger-ui-dist/**"
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
