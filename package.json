@@ -14,7 +14,8 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
-    "prepare": "npx husky install"
+    "prepare": "npx husky install",
+    "build": "node ./scripts/swaggerBuild.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
