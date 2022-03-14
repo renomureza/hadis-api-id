@@ -1,0 +1,11 @@
+[
+  { "name": "Abu Dawud", "slug": "abu-dawud", "total": 4419 },
+  { "name": "Ahmad", "slug": "ahmad", "total": 4305 },
+  { "name": "Bukhari", "slug": "bukhari", "total": 6638 },
+  { "name": "Darimi", "slug": "darimi", "total": 2949 },
+  { "name": "Ibnu Majah", "slug": "ibnu-majah", "total": 4285 },
+  { "name": "Malik", "slug": "malik", "total": 1587 },
+  { "name": "Muslim", "slug": "muslim", "total": 4930 },
+  { "name": "Nasai", "slug": "nasai", "total": 5364 },
+  { "name": "Tirmidzi", "slug": "tirmidzi", "total": 3625 }
+]
