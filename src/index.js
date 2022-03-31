@@ -3,7 +3,7 @@ const config = require('./config/config');
 const logger = require('./config/logger');
 
 const server = app.listen(config.port, () => {
-  logger.info(`server is running on port ${config.port}`);
+  logger.info(`server is running on port ${config.baseUrl}`);
 });
 
 const exitHandler = () => {
