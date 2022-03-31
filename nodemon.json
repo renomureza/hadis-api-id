@@ -1,3 +1,3 @@
 {
-  "ignore": ["*.test.js", ".vercel"]
+  "ignore": ["src/data/**"]
 }

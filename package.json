@@ -13,10 +13,6 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon src/index.js",
-    "test": "jest -i --colors --verbose --detectOpenHandles",
-    "test:watch": "jest -i --watchAll",
-    "coverage": "jest -i --coverage",
-    "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
@@ -40,10 +36,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security": "^1.4.0",
     "husky": "^7.0.4",
-    "jest": "^27.5.1",
     "lint-staged": "^12.3.5",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.1",
-    "supertest": "^6.2.2"
+    "prettier": "^2.5.1"
   }
 }

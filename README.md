@@ -2,9 +2,9 @@
   <a href="./">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Hadith1.png">
   </a>
-  <h1 align="center">Hadis API ID</h1>
+  <h1 align="center">API Hadis Indonesia</h1>
   <p align="center">
-      <strong>REST API Hadis dengan terjemahan Indonesia dari 9 perawi (Abu Dawud, Bukhari, Tirmidzi, Ibnu Majah, dll).</strong>
+      <strong>API Hadis dengan terjemahan Indonesia dari 9 perawi (Abu Dawud, Bukhari, Tirmidzi, Ibnu Majah, dll).</strong>
   </p>
    <p align="center">
     <a href="https://hadis-api-id.vercel.app"><strong>Demo</strong></a> · <a href="https://github.com/renomureza/hadis-api-id/issues"><strong>Lapor Bug</strong></a> · <a href="https://github.com/renomureza/hadis-api-id/issues"><strong>Request Fitur</strong></a>
@@ -28,11 +28,11 @@
 
 ## Endpoints
 
-| Endpoint                              | Contoh                                                                                                | Deskripsi                                                                                                                                    |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/hadith`                             | [`/hadith`](https://hadis-api-id.vercel.app/hadith)                                                   | daftar perawi.                                                                                                                               |
-| `/hadith/{perawiSlug}?page=1&limit20` | [`/hadith/abu-dawud?page=1&limit=20`](https://hadis-api-id.vercel.app//hadith/abu-dawud?page=1&limit) | daftar hadis berdasarkan imam. `page` (opsional, default 1) halaman paginasi, `limit` (opsional, default 20) batas jumlah hadis per halaman. |
-| `/hadith/{perawiSlug}/{norHadis}`     | [`/hadith/abu-dawud/2`](https://hadis-api-id.vercel.app/hadith/abu-dawud/2)                           | hadis dari berdasarkan imam dan nomor.                                                                                                       |
+| Endpoint                               | Contoh                                                                                                | Deskripsi                                                                                                                                    |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/hadith`                              | [`/hadith`](https://hadis-api-id.vercel.app/hadith)                                                   | daftar perawi.                                                                                                                               |
+| `/hadith/{perawiSlug}?page=1&limit=20` | [`/hadith/abu-dawud?page=1&limit=20`](https://hadis-api-id.vercel.app//hadith/abu-dawud?page=1&limit) | daftar hadis berdasarkan imam. `page` (opsional, default 1) halaman paginasi, `limit` (opsional, default 20) batas jumlah hadis per halaman. |
+| `/hadith/{perawiSlug}/{nomorHadis}`    | [`/hadith/abu-dawud/2`](https://hadis-api-id.vercel.app/hadith/abu-dawud/2)                           | hadis dari berdasarkan imam dan nomor.                                                                                                       |
 
 ## Sumber Data
 
